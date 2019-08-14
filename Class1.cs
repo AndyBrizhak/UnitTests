@@ -8,7 +8,7 @@ namespace UnitTests
     {
         public void MyMethod()
         {
-            
+            ++
         }
     }
 }
