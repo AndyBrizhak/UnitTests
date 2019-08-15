@@ -9,7 +9,7 @@ namespace UnitTests
         [Test]
         public void MyMethod()
         {
-            
+            Assert.Fail();
         }
     }
 }
