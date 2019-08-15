@@ -13,6 +13,7 @@
     <e p="F:\Educational materials\IT\C#+Dot Net\Udemy\Udemy - Master.NET and C# Unit Testing with NUnit and Moq\UnitTests" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="BankAccount.cs" t="Include" />
+      <e p="BankAccountTests.cs" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Class1.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
