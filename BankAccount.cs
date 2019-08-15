@@ -2,7 +2,7 @@ namespace UnitTests
 {
     public class BankAccount
     {
-       public int Balance { get; private set}
+       public int Balance { get; private set; }
 
        
 
