@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 namespace UnitTests
 {
@@ -7,7 +8,8 @@ namespace UnitTests
         [Test]
         public void BankAccountShouldIncreaseOnPositiveDeposite()
         {
-            
+            Assert.Warn("Not good");
+          // throw new Exception();
         }
         
     }
