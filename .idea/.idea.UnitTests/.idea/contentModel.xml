@@ -15,7 +15,7 @@
       <e p="BankAccount.cs" t="Include" />
       <e p="BankAccountTests.cs" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
-      <e p="Class1.cs" t="Include" />
+      <e p="MyFixture.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp2.2" t="Include">
