@@ -12,8 +12,14 @@ namespace UnitTests
         {
             ba = new BankAccount(100);
         }
-        
-        
+
+public void TestMultipleWithdrawalScenarios(int amountToWithdraw,
+    bool shouldSucced,
+    int expectedBalance)
+{
+    var result = ba.Withdraw(amountToWithdraw);
+    
+}
 
     }
 }
