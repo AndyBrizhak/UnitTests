@@ -5,12 +5,12 @@ namespace UnitTests
     [TestFixture()]
     public class BankAccountTests
     {
-        [Test]
-        public void BankAccountShouldIncreaseOnPositiveDeposite()
-        {
-            Assert.Warn("Not good");
-          // throw new Exception();
-        }
+//        [Test]
+//        public void BankAccountShouldIncreaseOnPositiveDeposite()
+//        {
+//            Assert.Warn("Not good");
+//          // throw new Exception();
+//        }
         
     }
 }
