@@ -1,3 +1,5 @@
+using System;
+
 namespace UnitTests
 {
     public class BankAccount
@@ -13,6 +15,11 @@ namespace UnitTests
 
        public void Deposit(int amount)
        {
+           if (amount<=0)
+           {
+              throw new  ArgumentException("Deposit amount must be positive", 
+                  nameof(amount));    
+           }
            Balance += amount;
        }
        public void Withdraw(int amount)
