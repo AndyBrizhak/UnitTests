@@ -24,6 +24,11 @@ namespace UnitTests
        }
        public bool Withdraw(int amount)
        {
+           if (Balance>= amount)
+           {
+               Balance -= amount;
+               return true;
+           }
            return false;
        }
     }
