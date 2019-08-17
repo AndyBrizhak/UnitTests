@@ -17,6 +17,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Class1.cs" t="Include" />
       <e p="DataDrivenTests.cs" t="Include" />
+      <e p="EquationTests.cs" t="Include" />
       <e p="MyFixture.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
