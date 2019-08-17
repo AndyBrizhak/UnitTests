@@ -26,6 +26,7 @@
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Solve.cs" t="Include" />
       <e p="UnitTests.csproj" t="IncludeRecursive" />
       <e p="UnitTests.sln" t="IncludeFlat" />
     </e>
