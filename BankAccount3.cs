@@ -12,11 +12,8 @@ namespace UnitTests
         
                 public void Deposit(int amount)
                 {
-                    if (log.Write($"Depositing {amount}"))
-                    {
-                        
-                        Balance += amount;
-                    }
+                   log.Write($"User has withdrawn {amount}")
+                   Balance += amount;
                 }
     }
 }
