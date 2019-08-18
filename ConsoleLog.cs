@@ -4,9 +4,11 @@ namespace UnitTests
 {
     class ConsoleLog:ILog
     {
-        public void Write(string msg)
+        public bool Write(string msg)
         {
             Console.WriteLine(msg);
+            return true;
+
         }
     }
 }
