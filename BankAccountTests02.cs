@@ -16,18 +16,27 @@ namespace UnitTests
             Assert.That(ba.Balance, Is.EqualTo(200));
         }
         
-        [Test]
-        public void DepositTestFake()
-        {
-            ba = new BankAccount02(new NullLog()) {Balance = 100};
-            ba.Deposit(100);
-            Assert.That(ba.Balance, Is.EqualTo(200)); 
-        }
+//        [Test]
+//        public void DepositTestFake()
+//        {
+//            ba = new BankAccount02(new NullLog()) {Balance = 100};
+//            ba.Deposit(100);
+//            Assert.That(ba.Balance, Is.EqualTo(200)); 
+//        }
         
+//        [Test]
+//        public void DepositTestWithDynamicFake()
+//        {
+//            ba = new BankAccount02(Null<ILog>.Instance) {Balance = 100};
+//            ba.Deposit(100);
+//            Assert.That(ba.Balance, Is.EqualTo(200)); 
+//        }
+
         [Test]
-        public void DepositTestWithDynamicFake()
+        public void DepositTestStub()
         {
-            ba = new BankAccount02(Null<ILog>.Instance) {Balance = 100};
+            var log = new NullLogWithResult(true);
+            ba = new BankAccount02(log) {Balance = 100};
             ba.Deposit(100);
             Assert.That(ba.Balance, Is.EqualTo(200)); 
         }
