@@ -1,6 +1,5 @@
-using System;
-using System.Dynamic;
 using NUnit.Framework;
+
 
 namespace UnitTests
 {
@@ -23,19 +22,6 @@ namespace UnitTests
             ba = new BankAccount02(new NullLog()) {Balance = 100};
             ba.Deposit(100);
             Assert.That(ba.Balance, Is.EqualTo(200)); 
-        }
-    }
-
-    public class Null<T> : DynamicObject    where T    : class
-    {
-        public override bool TryInvokeMember(InvokeMemberBinder binder, 
-            object[] args, out object result)
-        {
-            result = Activator.CreateInstance(
-                typeof(T).GetMethod(binder.Name).ReturnType
-            );
-            return true;
-
         }
     }
 }
