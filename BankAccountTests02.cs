@@ -14,5 +14,13 @@ namespace UnitTests
             ba.Deposit(100);
             Assert.That(ba.Balance, Is.EqualTo(200));
         }
+        
+        [Test]
+        public void DepositTestFake()
+        {
+            ba = new BankAccount02(new NullLog()) {Balance = 100};
+            ba.Deposit(100);
+            Assert.That(ba.Balance, Is.EqualTo(200)); 
+        }
     }
 }
