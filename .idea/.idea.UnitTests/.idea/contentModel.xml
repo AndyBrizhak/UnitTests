@@ -23,6 +23,7 @@
       <e p="EquationTests.cs" t="Include" />
       <e p="ILog.cs" t="Include" />
       <e p="MyFixture.cs" t="Include" />
+      <e p="NullLog.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp2.2" t="Include">
@@ -33,6 +34,7 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Solve.cs" t="Include" />
       <e p="UnitTests.csproj" t="IncludeRecursive" />
+      <e p="UnitTests.csproj.DotSettings" t="Include" />
       <e p="UnitTests.sln" t="IncludeFlat" />
     </e>
   </component>

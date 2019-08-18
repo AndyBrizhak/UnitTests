@@ -12,6 +12,7 @@ namespace UnitTests
 
         public void Deposit(int amount)
         {
+            log.Write($"Depositing {amount}");
             Balance += amount;
         }
     }

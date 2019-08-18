@@ -1,6 +1,6 @@
 namespace UnitTests
 {
-    interface ILog
+    public interface ILog
     {
         void Write(string msg);
     }
