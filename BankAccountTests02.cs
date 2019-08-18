@@ -40,5 +40,19 @@ namespace UnitTests
             ba.Deposit(100);
             Assert.That(ba.Balance, Is.EqualTo(200)); 
         }
+        
+        [Test]
+       public  void DepositTestWithMock()
+       {
+          var log = new LogMock(true);
+                      ba = new BankAccount02(log) {Balance = 100};
+                      ba.Deposit(100);  
+                      Assert.Multiple(() =>
+                              {
+                                  Assert.That(ba.Balance, Is.EqualTo(200)); 
+                                  Assert.That(
+                                      log.MethodCallCount[nameof(LogMock.Write)], Is.EqualTo(1));
+                              });
+       }
     }
 }
