@@ -3,7 +3,7 @@ namespace UnitTests
     public  class NullLog : ILog
     {
         /// <summary>
-        /// ++++
+        /// +++++
         /// </summary>
         /// <param name="msg"></param>
         /// <returns></returns>
